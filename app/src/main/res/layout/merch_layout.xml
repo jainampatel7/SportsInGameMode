@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/parking_lot">
+
+    <ImageView
+        android:id="@+id/merch_image"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/purdueteam"/>
+
+    <TextView
+        android:id="@+id/merch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/merch_image"
+        android:layout_marginTop="15dp"
+        android:text="BOILERMAKERS Logo T-Shirt"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/merch_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/merch_image"
+        android:layout_below="@id/merch_name"
+        android:text="Size: M"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"/>
+
+
+    <TextView
+        android:id="@+id/merch_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/merch_image"
+        android:layout_below="@id/merch_size"
+        android:text="Price: $24.99"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/add_to_cart"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/merch_image"
+        android:layout_below="@id/merch_price"
+        android:text="Add To Cart"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/curved_background"
+        android:backgroundTint="@color/purple"
+        android:textColor="#FFFF"/>
+
+
+</RelativeLayout>
+</RelativeLayout>
